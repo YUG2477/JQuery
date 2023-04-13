@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAB</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script>
+
+        // tab
+        $(document).ready(function(){
+        
+            $("#tab1").click(function(){
+    $("#test1").text("Hello world-para1!");
+    $("#tab1").css("background-color", "yellow");
+    $("#tab2").css("background-color", "rgb(171, 216, 181)");
+    $("#tab3").css("background-color", "rgb(171, 216, 181)");
+  
+
+          });
+          $("#tab2").click(function(){
+    $("#test1").text("Hello world-para2! lorem12a kjdsanbffhauefiaefiw");
+    $("#tab2").css("background-color", "yellow");
+    $("#tab1").css("background-color", "rgb(171, 216, 181)");
+    $("#tab3").css("background-color", "rgb(171, 216, 181)");
+          });
+          $("#tab3").click(function(){
+    $("#test1").text("Hello world-para3! adfjnfpaghwrgpppppppppppppppppppganvjrpgaqbnnoirgfkv cago");
+    $("#tab3").css("background-color", "yellow");
+    $("#tab1").css("background-color", "rgb(171, 216, 181)");
+    $("#tab2").css("background-color", "rgb(171, 216, 181)");
+
+          });
+        });
+        </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="main-box">
+            <div class="head">
+                <button id="tab1">Tab1</button>
+<button id="tab2">Tab2</button>
+<button id="tab3">Tab3</button>
+            </div>
+            <div class="contain">
+                <div id="para1">
+                    <p id="test1">Hello world-para1!</p>
+                </div>
+                <!-- <div id="para2">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure repellat consectetur fuga eum. Ratione illo, quisquam officia sed delectus provident reprehenderit, in quasi itaque esse cupiditate maxime eligendi saepe a consectetur deserunt harum praesentium facere adipisci repudiandae atque? Nulla, consectetur.</p>
+                </div>
+                <div id="para3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure repellat consectetur fuga eum. Ratione illo, quisquam officia sed delectus provident reprehenderit, in quasi itaque esse cupiditate maxime eligendi saepe a consectetur deserunt harum praesentium facere adipisci repudiandae atque? Nulla, consectetur.</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
