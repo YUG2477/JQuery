@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>COUNTDOWN</h1>
+        </div>
+        <div class="clock-section">
+            <div class="hours-section">
+                <div class="hours-digit">00</div>
+                <div class="hours">Hours</div>
+            </div>
+            <div class="minutes-section">
+                <div class="minutes-digit">00</div>
+                <div class="minutes">Minutes</div>
+            </div>
+            <div class="seconds-section">
+                <div class="seconds-digit">00</div>
+                <div class="seconds">Seconds</div>
+            </div>
+            <div class="c-seconds-section">
+                <div class="c-seconds-digit">00</div>
+                <div class="c-seconds">C-Seconds</div>
+            </div>
+        </div>
+        <div class="entry-section">
+            <input type="text" placeholder="Enter Time in Seconds" class="entry">
+        </div>
+        <div class="controller">
+            <button class="start" data-state="start">START</button>
+            <button class="pause">PAUSE</button>
+            <button class="stop">STOP</button>
+            <button class="reset">RESET</button>
+        </div>
+        <div class="footer">
+            <h2 id="demo">ENTER TIME & HIT START...!</h2>
+        </div>
+        <div class="extra">
+            <h4></h4> 
+         </div>
+    </div>
+</body>
+
+</html>

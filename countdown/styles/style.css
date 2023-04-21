@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.head {
+    text-align: center;
+}
+
+.clock-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 21px;
+}
+
+.entry-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.controller {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.hours-section {
+    border: 2px solid #bebaba;
+    display: flex;
+    flex-direction: column;
+    
+}
+.hours-digit {
+    border-bottom: 2px solid #bebaba;
+    padding: 19px;
+    font-size: 20px;
+}
+.hours {
+    padding: 19px;
+}
+
+
+.minutes-section{
+    border: 2px solid #bebaba;
+    display: flex;
+    flex-direction: column;
+    
+}
+.minutes-digit{
+    border-bottom: 2px solid #bebaba;
+    padding: 19px;
+    font-size: 20px;
+
+}
+.minutes{
+    padding: 19px;
+}
+
+
+
+.seconds-section{
+    border: 2px solid #bebaba;
+    display: flex;
+    flex-direction: column;
+    
+}
+.seconds-digit{
+    border-bottom: 2px solid #bebaba;
+    padding: 19px;
+
+    font-size: 20px;
+
+}
+.seconds{
+    padding: 19px;
+}
+
+.c-seconds-section {
+    border: 2px solid #bebaba;
+    display: flex;
+    flex-direction: column;
+    
+}
+.c-seconds-digit {
+    border-bottom: 2px solid #bebaba;
+    padding: 19px;
+    font-size: 20px;
+
+}
+.c-seconds{
+    padding: 19px;
+}
+
+input[type="number"] {
+    max-width: 377px;
+    width: 100%;
+    padding: 10px 10px;
+}
+button{
+    padding: 4px 11px;
+    background: white;
+    border: 2px solid #bebaba;
+    cursor: pointer;
+
+}
+
+.footer{
+    border: 2px solid #bebaba;
+    max-width: 384px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 19px;
+    opacity: .8;
+}
+.start{
+    color: rgb(58, 238, 58);
+border: 1px solid rgb(58, 238, 58);
+    font-size: 15px;
+}
+.pause{
+color: rgb(107, 114, 221);
+border: 1px solid rgb(107, 114, 221);
+}
+.stop{
+    color: rgb(241, 74, 74);
+border: 1px solid rgb(241, 74, 74);
+
+}
+.reset{
+    color: rgb(102, 101, 101);
+border: 1px solid rgb(102, 101, 101);
+
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+.extra{
+    max-width: 384px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 19px;
+}
+
+input.entry {width: 381px;padding: 7px 16px;}
