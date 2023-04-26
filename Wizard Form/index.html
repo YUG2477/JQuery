@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./Style/style.css">
+    <script src="./Script/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <!-- <script src="js/form-validation.js"></script> -->
+  
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="" name="form1" id="formSubmit">
+
+            <!-- <div class="step-section">
+                <div class="step-1">
+                    <p>STEP 1</p>
+                </div>
+                <div class="step-2">
+                    <p>STEP 2</p>
+                </div>
+                <div class="step-3">
+                    <p>STEP 3</p>
+                </div>
+            </div> -->
+            <!-- <div class="heading">
+                <h1>Wizard Form</h1>
+            </div> -->
+
+            <div class="tab" id="tab1">
+
+                <div class="step-section">
+                    <div class="step-1" style="color: brown;">
+                        <p>STEP 1</p>
+                    </div>
+                    <div class="step-2">
+                        <p>STEP 2</p>
+                    </div>
+                    <div class="step-3">
+                        <p>STEP 3</p>
+                    </div>
+                </div>
+                <div style="display: flex;
+                align-items: center;
+                gap: 15px;">
+                    <div>
+                        <p>First Name: </p>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Enter First Name" name="fname" id="firstname">
+                    </div>
+                </div>
+                <div style="display: flex;
+                align-items: center;
+                gap: 16px;">
+                    <div>
+                        <p>Last Name: </p>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Enter Last name" name="lname" id="lastname">
+                    </div>
+                </div>
+                <div class="gender">
+
+                    <p>Gender: </p>
+                    <div class="gender-section">
+                        <div class="option-gender">
+
+                            <div style="padding-top: 3px;">
+                                <input type="radio" id="male" name="gender" value="male">
+                            </div>
+                            <div>
+                                <label for="male">Male</label><br>
+                            </div>
+                        </div>
+                        <div class="option-gender">
+                            <div style="padding-top: 3px;">
+
+                                <input type="radio" id="female" name="gender" value="Female">
+                            </div>
+                            <div>
+                                <label for="female">Female</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab" id="tab2">
+
+                <div class="step-section">
+                    <div class="step-1">
+                        <p>STEP 1</p>
+                    </div>
+                    <div class="step-2" style="color: brown;">
+                        <p>STEP 2</p>
+                    </div>
+                    <div class="step-3">
+                        <p>STEP 3</p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 41px; align-items: center;">
+                    <div style="text-align: right;">
+                        <p>Email Id: </p>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Enter Email " name="email" id="useremail">
+                    </div>
+                </div>
+                <div style="display: flex; gap: 24px; align-items: center;">
+                    <div>
+                        <p>Contact No: </p>
+                    </div>
+                    <div>
+                        <input type="number"  placeholder="Enter Contact Number" id="usernumber"  name="contact">
+                    </div>
+                </div>
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <div>
+                        <p>Date Of Birth: </p>
+                    </div>
+                    <div>
+                        <input type="date" name="userdob"  id="userdob">
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab" id="tab3">
+                <div class="step-section">
+                    <div class="step-1" >
+                        <p>STEP 1</p>
+                    </div>
+                    <div class="step-2">
+                        <p>STEP 2</p>
+                    </div>
+                    <div class="step-3" style="color: brown;">
+                        <p>STEP 3</p>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="    display: flex;
+                gap: 30px;">
+                        <div>
+                            <p>Favourite Sports: </p>
+                        </div>
+                        <div>
+                            <select name="fsports" id="sports">
+                                <option value="cricket">---Select---</option>
+                                <option value="cricket">Cricket</option>
+                                <option value="tennis">Table Tennis</option>
+                                <option value="basketball">Basketball</option>
+                                <option value="kho">kho-kho</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="    display: flex;
+                gap: 37px;">
+                        <div>
+                            <p>About Yourself: </p>
+                        </div>
+                        <div>
+                            <textarea name="message" rows="2" cols="50"
+                                placeholder="Tell us something about You..!" id="aboutuser"></textarea>
+                        </div>
+                    </div>
+                    <div class="tacbox">
+                        <input id="checkbox" type="checkbox" name="tandc"/>
+                        <label for="checkbox"> I agree to <a href="#">Terms and Conditions</a>.</label>
+                    </div>
+                </div>
+                
+            </div>
+            <div style="overflow:auto;">
+                <div class="btn">
+                    <button type="button" id="prevBtn">PREVIOUS</button>
+                    <button type="button" id="nextBtn">SAVE & NEXT</button>
+                    <!-- <button type="button" id="submitBtn">SUBMIT</button> -->
+                </div>
+            </div>
+
+            <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+
+        </form>
+    </div>
+
+
+       <table id="record">
+        <thead>
+            <tr> 
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Gender</td>
+                <td>Email Id</td>
+                <td>Contact No</td>
+                <td>DOB</td>
+                <td>Sports</td>
+                <td>About You</td>
+                <td>T & C</td>
+            </tr>
+        </thead>
+        <tbody id="tablebody">
+
+        </tbody>
+            
+            <!-- <tr style="text-align: center;">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+         <td>No data available in table.</td>
+         
+        </tr>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Email Id</th>
+            <th>Contact No</th>
+            <th>DOB</th>
+            <th>Sports</th>
+            <th>About You</th>
+            <th>T & C</th>
+        </tr> -->
+        
+    </table>
+
+    
+    
+</body>
+
+</html>
